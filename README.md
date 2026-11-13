@@ -1,4 +1,4 @@
-# EarningsScope
+# Transcript-Analyzer
 
 EarningsScope compares two earnings-call transcripts from the same company. Upload an earlier and a later call to see changes in positive, negative, and uncertainty language, read the passages behind the counts, and inspect numerical guidance alongside its source quotes.
 
@@ -42,7 +42,7 @@ npm --prefix apps/web run dev -- --host 127.0.0.1
 
 Open the [dashboard](http://127.0.0.1:5173) or the [FastAPI docs](http://127.0.0.1:8000/docs). For frontend checks, run `npm --prefix apps/web run lint` and `npm --prefix apps/web run build`. For a backend startup check with the dictionary installed, run `.\.venv\Scripts\python.exe -c "from apps.api.main import app; print(app.title)"`.
 
-## Junior seminar demo: Microsoft FY2026 Q2 → Q3
+## Demo: Microsoft FY2026 Q2 → Q3
 
 1. Open the official [FY2026 Q2 call](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2) and [FY2026 Q3 call](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3). Copy each page's **Transcript** section into a UTF-8 text file. Keep the speaker labels and paragraph breaks. Save them locally as `data/raw/transcripts/MSFT_FY2026_Q2.txt` and `data/raw/transcripts/MSFT_FY2026_Q3.txt`.
 2. In the dashboard, upload Q2 as **Previous quarter** and Q3 as **Current quarter**. Enter `Satya Nadella, Amy Hood` in **Management speakers**, then select **Compare quarters**.
