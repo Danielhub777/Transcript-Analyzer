@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+.envrc
+.npmrc
+.pypirc
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Build / cache
+dist/
+dist-ssr/
+build/
+.next/
+out/
+.turbo/
+.cache/
+*.tsbuildinfo
+tmp/
+
+# Logs and OS
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Data (keep folder via .gitkeep)
+data/raw/transcripts/*
+!data/raw/transcripts/.gitkeep
+data/processed/*
+data/dictionaries/*
+
+# Local development notes and imported chat exports
+docs/development_handoff.md
